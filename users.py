@@ -20,7 +20,7 @@ class accounts:
         for user_obj in accounts.container:
             if user_obj["username"]==username and user_obj["password"]==password:
                 user_id=user_obj["_id"]
-                info=loginUser(loggedIn,user_id)
+                info=accounts.loginUser(loggedIn,user_id)
                 return info
                 
                 
